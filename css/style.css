@@ -138,7 +138,9 @@ h3:after{
     color:#e67e22;
     margin-left: 35%;
 }
-
+.last-heading-message{
+    margin-top: 240px;
+}
 .features h4{
     margin-left: 40px;
 }
