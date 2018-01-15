@@ -17,16 +17,76 @@
     <header>
         <div class="logo">
             <img src="images/tajLogo.png" alt="logo" />
-            <h5 class="logoDescription">Taste Of India</h5>
+            <h5 id="logoDescription" class="logoDescription">Taste Of India</h5>
         </div>
+        <nav class="pure-drawer" id="menu-drawer" data-position="right">
+            
+        <div class="row collapse">
+            <div class="large-12 columns">
+                <ul class="nav-primary">
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                    <li>Chicken</li>
+                    <li>Fish</li>
+                    <li>Goat</li>
+                    <li>Lamb</li>
+                    <li>Crab</li>
+                    <li>Beef</li>
+                    <li>Whatever</li>
+                </ul>
+            </div>
+
+        </div>
+
+        </nav>
         <div class="row">
             <ul class="main-nav">
                 <li><a href="#"> HOME </a></li>
                 <li>
                     <a href="#"> ABOUT US</a>
                 </li>
-                <li>
-                    <a href="#">OUR MENU</a>
+                <li class="openMenu">
+                    <a href="#"  data-effect="pure-effect-scaleRotate" data-toggle="drawer" data-target="#menu-drawer" >OUR MENU</a>
                 </li>
                 <li>
                     <a href="#">CONTACT </a>
@@ -110,15 +170,13 @@
     <section class="form">
         <div class="container">
         <div class=""></div>
-            <h3 class="text-center last-heading-message" > WE ARE HAPPY TO HEAR FROM YOU</h3>
+            <h3 class="text-center last-heading-message" > LEAVE A FEEDBACK</h3>
         </div>
         <div class="row gap">
-            <div class="col-md-6">
-                <input type="text" placeholder="Your name" class="form-control">
+            <div class="col-md-6" id="feedback-input">
+                <input type="text" id="customerName" placeholder="Your name" class="form-control">
                 <br>
-                <input type="email" placeholder="Your email" class="form-control">
-                <br>
-                <input type="password" placeholder="Your password" class="form-control">
+                <input type="email" id="customerEmail"  placeholder="Your email" class="form-control">
                 <br>
                 <select name="" class="form-control">
                     <option>How did you hear about us?</option>
@@ -128,15 +186,18 @@
                     <option value="Internet">Internet</option>
                 </select>
                 <br>
-                <textarea class="form-control" rows="8" placeholder="comments"></textarea>
+                <textarea class="form-control" id="customerFeedback" rows="8" placeholder="comments"></textarea>
                 <br>
-                <button class="btn btn-warning">Send Message</button>
+                <button class="btn btn-warning" id="submitFeedback">Submit</button>
                 <br>
             </div>
         </div>
         </div>
         </div>
     </section>
+    <div id="displayFeedback">
+        <ol  class="list-group" id="displayFeedbackList"></ol>
+    </div>
     <footer class="footter">
         <div class="container">
             <section>
@@ -161,7 +222,14 @@
             </section>
             </div>
     </footer>
+
+
     </div>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
 </body>
 
 </html>
