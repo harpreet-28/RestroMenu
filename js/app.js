@@ -8,8 +8,10 @@ $(function() {
         let feedbackListItem = $("#customerFeedback").val();
         let customerName = $('#customerName').val().toUpperCase().bold();
         if (feedbackListItem.length > 0) {
-            $("#displayFeedbackList").append('<li>' + feedbackListItem + '	--' + customerName + ' (' + customerEmail + ')' + '</li>')
+            $("#displayFeedbackList").append('<li>' + feedbackListItem + '	--' + customerName + ' (' + customerEmail + ')' + '</li>' + '<br> <br>');
             $("#customerFeedback").val("");
+            $("#customerEmail").val("");
+            $("#customerName").val("");
         };
     });
 
@@ -29,22 +31,12 @@ $(function() {
 	console.log($menuBtn)
 	console.log($menu)
 
-
+	$menuBtn.click(function(){
+		$menu.show('slow')
+	})
+	$menuBtn.dblclick(function(){
+		$menu.hide('slow');
+	});
 
 });
 
-
-
-// const _id = (id) =>  document.getElementById(id);
-
-// const _id = function _id(id){
-// 	return document.getElementById(id);
-// }
-
-
-
-
-
-// 
-
-//         const todaySpecialAlert = _id('today-special'); console.log(todaySpecialAlert)
