@@ -24,60 +24,30 @@
         <div class="row collapse">
             <div class="large-12 columns">
                 <ul class="nav-primary">
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
-                    <li>Chicken</li>
-                    <li>Fish</li>
-                    <li>Goat</li>
-                    <li>Lamb</li>
-                    <li>Crab</li>
-                    <li>Beef</li>
-                    <li>Whatever</li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+                    <li>Chicken <label>$20.99<label></li>
+                    <li>Fish <label>$25.99<label></li>
+
+                   
                 </ul>
             </div>
 
         </div>
-
+       
+       
         </nav>
         <div class="row">
             <ul class="main-nav">
@@ -85,7 +55,7 @@
                 <li>
                     <a href="#"> ABOUT US</a>
                 </li>
-                <li class="openMenu">
+                <li id="openMenu">
                     <a href="#"  data-effect="pure-effect-scaleRotate" data-toggle="drawer" data-target="#menu-drawer" >OUR MENU</a>
                 </li>
                 <li>
@@ -99,8 +69,9 @@
         <div class="hdr">
             <h1 class="message">Authentic Indian Restaurant</h1>
             <div class="button">
-                <button class="btn btn-warning btn-view"><a href="#">Today's Special</a></button>
-                
+                <button class="btn btn-warning btn-view" id="btnTodaySpecial"><a href="#">Today's Special</a></button>
+         <div class="alert alert-danger" role="alert" id="today-special" hidden>Today You may want to order Chicken Tikka</div>
+
             </div>
         </div>
     </header>
@@ -222,7 +193,6 @@
             </section>
             </div>
     </footer>
-
 
     </div>
     <script
