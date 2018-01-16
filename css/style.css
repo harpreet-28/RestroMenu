@@ -7,7 +7,7 @@
     max-width: 1050px;
     margin: 0 auto;
     position: relative;
-   
+
 }
 
 body {
@@ -296,26 +296,30 @@ div.brand{
     float: right;
     line-height:50px;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
+    height: 600px;
+    overflow: hidden;
 
 }
 nav.menu{
     text-align: left;
     text-decoration: none;
-    width: 150px;
+    width: 350px;
     background-color: salmon;
-    
     height: 100%;
     
 }
 nav.menu li{
     background-color: salmon;
-    
     list-style-type: none;
     text-decoration: none;
     border-bottom: 1px solid beige;
+}
+nav.menu li label{
+    text-align: right;
+    font-size: 10px;
 }
 nav.menu li:hover{
 
