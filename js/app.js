@@ -39,7 +39,7 @@ $(function() {
 
 
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    // const specialMeal = ["Chicken Tikka Masala", "Chicken Biryani", "Tandoori Salmon", "Vegetable Platter", "Lamb Curry", "Non-Veg Platter", "Butter Chicken"];
+    
     const a = new Date();
     const currentDay = weekday[a.getDay()];
     console.log(currentDay)
