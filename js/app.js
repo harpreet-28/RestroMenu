@@ -20,20 +20,23 @@ $(function() {
     $todaySpecialBtn.click(function() {
         $todaySpecialMessage.show('slow');
     })
-    $todaySpecialBtn.mouseout(function() {
+    $todaySpecialMessage.click(function() {
         $todaySpecialMessage.hide('slow');
     });
 
 
     let $menuBtn = $('#openMenu')
     let $menu = $('#menu-drawer');
+    let $menuCloseBtn = $('#menuCloseBtn');
     console.log($menuBtn)
     console.log($menu)
 
     $menuBtn.click(function() {
         $menu.show('slow')
     })
-    $menuBtn.dblclick(function() {
+
+   
+    $menuCloseBtn.click(function() {
         $menu.hide('slow');
     });
 
@@ -61,4 +64,18 @@ $(function() {
     	$todaySpecialMessage.append('<p>'+'Tandoori Paneer Tikka'+'</p>');
     }
 
+
+    let $orderCheck = $('.order-check');
+    let $cartCloseBtn = $('#cart-menuCloseBtn');
+    let $orderList = $('#orderList');
+
+    $orderCheck.click(function(evt){
+        evt.preventDefault();
+        $orderList.show('slow');
+    })
+
+
+    $cartCloseBtn.click(function(){
+         $orderList.fadeOut('slow');
+    })
 });

@@ -7,7 +7,6 @@
     max-width: 1050px;
     margin: 0 auto;
     position: relative;
-
 }
 
 body {
@@ -16,10 +15,11 @@ body {
 
 .hdr {
     position: absolute;
-    width: 1050px;
+    width: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    margin-left: -240px;
 }
 
 header {
@@ -190,8 +190,6 @@ h3:after {
     margin: 0;
     padding: 100px 0 0 0;
     border-bottom: 1px solid #24323d;
-   
-
 }
 
 .nav-primary li {
@@ -212,7 +210,6 @@ h3:after {
 .row {
     width: 100%;
     margin-left: auto;
-    margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
     max-width: 80rem;
@@ -227,9 +224,12 @@ h3:after {
 .row:after {
     clear: both;
 }
+
 .row.collapse .columns {
-  padding-left: 0;
-  padding-right: 0; }
+    padding-left: 0;
+    padding-right: 0;
+}
+
 .package_col {
     border: 1px solid #e67e22;
     margin: 9px;
@@ -270,8 +270,9 @@ h3:after {
 #displayFeedback {
     width: 80rem;
     margin-left: 7rem;
-    text-decoration:none;
+    text-decoration: none;
 }
+
 #btnTodaySpecial {
     float: left;
     position: relative;
@@ -289,21 +290,21 @@ h3:after {
     text-align: center;
     font-weight: bolder;
     /*margin-top: 500px;*/
-    }
+}
 
-div.brand{
+div.brand {
 
     float: right;
-    line-height:50px;
+    line-height: 50px;
     color: white;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     height: 600px;
     overflow: auto;
-
 }
-nav.menu{
+
+nav.menu {
     text-align: left;
     text-decoration: none;
     width: 350px;
@@ -311,7 +312,8 @@ nav.menu{
     height: 100%;
     opacity: 0.7;
 }
-nav.menu li{
+
+nav.menu li {
     background-color: darkred;
     list-style-type: none;
     text-decoration: none;
@@ -319,24 +321,40 @@ nav.menu li{
     color: salmon;
     padding-left: 15px;
 }
-nav.menu li label{
+
+nav.menu li label {
     text-align: right;
     font-size: 15px;
     padding-left: 15px;
     margin-right: 10px;
 }
-nav.menu li:hover{
+
+nav.menu li:hover {
 
     background-color: #CD801C;
-    color:darkred;
+    color: darkred;
     border-bottom: 1px solid salmon;
-    
 }
-nav.menu li:last-child{
+
+nav.menu li:last-child {
     border-bottom: none;
 }
+
 .selectFoodItem {
-   
+
+
+}
+
+#menuCloseBtn {
+    float: right;
+    padding: 0;
+    font-weight: bolder;
+    font-family: helvetica;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    margin-right: 7px;
+
 }
 
 #orderBtn {
@@ -351,11 +369,14 @@ nav.menu li:last-child{
     float: right;
     margin-top: 0px;
     padding-top: 0px;
-    margin-right: 25rem;
+    margin-right: 10rem;
     padding-bottom: 15rem;
+    margin-bottom: 7rem;
+
     size: 10rem;
     color: brown;
 }
+
 .cartLink {
     color: brown;
 }
@@ -366,32 +387,69 @@ nav.menu li:last-child{
     width: 800px;
     border: 5px solid darkred;
     border-radius: 10px;
-    margin: 0;
-    padding: 0;
+   
     margin-left: 30rem;
     background-color: darkred;
-    background-image:url('../images/platter.png');
+    background-image: url('../images/platter.png');
     background-size: cover;
+    overflow: auto;
+    /*position: absolute;*/
+    
 }
-.top-heading {
+
+.cart-top-heading {
     font-weight: bold;
     text-align: center;
-    color:#CD801C;
+    color: #CD801C;
     background-color: darkred;
-    border:2px solid #CD801C;
+    border: 2px solid #CD801C;
     border-radius: 7px;
+    opacity: 0.5;
+    text-decoration: none;
 }
-.adressDetailLabel{
+
+ul {
+    list-style-type: none;
+}
+.adressDetailLabel {
     border: 2px solid #CD801C;
     color: #CD801C;
     font-size: 20px;
     padding: 10px;
     border-radius: 7px;
     float: left;
+    background-color: darkred;
+    margin-left: 3rem;
+    display: inline;
+    opacity: 0.7;
+    position: absolute;
+
+}
+.customer-info {
+    margin-top: 15rem;
+}
+.form-control {
+    width: 400px;
+    margin-left: 25rem;
+    border-radius: 7px;
 }
 
-.form-control{
+#orderList {
+    overflow: auto;
+    height: 500px;
+    margin-left: 20rem;
     width: 400px;
-    display: inline-block;
-    border-radius: 7px;
+    background-color: brown;
+    opacity: 0.7;
+}
+
+#cart-menuCloseBtn {
+    float: right;
+    padding: 0;
+    font-weight: bolder;
+    font-family: helvetica;
+    color: #fff;
+    
+    text-decoration: none;
+    margin-right: 7px;
 }
